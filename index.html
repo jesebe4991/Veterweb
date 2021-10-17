@@ -2,69 +2,66 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Veterinaria</title>
+        <title>VETERWEB</title>
         <meta name="keywords" content="Veterinaria, perros, mascotas">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="css/master.css">
 
     </head>
     <body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <div class="container-fluid">
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">Pero</option>
-                <option value="2">Gato</option>
-                <option value="3">Loro</option>
-            </select>
-          </div>
+        <div class="container">
+            <form class="row g-3" action=""" method="POST">
+                <h1 class="Tipo"> Datos mascota</h1>
+                <div class="col-md-6">
+                    <label for="nom" class="form-label">Nombre mascota</label>
+                    <input type="text" name="nombre mascota" class="form-control" required maxlength="50">
+                </div>
 
-     
-        <form action="Veterinaria.html" method="POST">
-            <h1> Datos mascota</h1>
+                <div class="col-6">
+                    <label for="Raza" class="form-label">Raza mascota</label>
+                    <input type="text" class="form-control" id="Raza" placeholder="Labrador" >
+                </div>
+                        
+                <div class="col-6">
+                    <label for="Edad" class="form-label">Edad</label>
+                    <input type="number" class="form-control" id="Edad" placeholder="min 1 - max 100" min="0" max="100" >
+                </div>
+                
 
-            <h3> Nombre mascota </h3>
-            <label for="nom">Nombre mascota</label>
-            <input type="text" name="nombre mascota" id="nombre mascota" size="" maxlength="20">
+                <h1 class="Tipo"> Datos dueño</h1>
 
-            <h3> Raza </h3>
-            <label for="nom">Raza mascota</label>
-            <input type="text" name="Raza mascota" id="Raza mascota" size="" maxlength="20">
 
-            <h3> Edad mascota </h3>
-            <label for="nom">Edad</label>
-            <input type="text" name="Edad" id="Edad" size="" maxlength="20">
+                <div class="col-6">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="Nombre" placeholder="Nombre" >
+                </div>
+                
+                <div class="col-6">
+                    <label for="Cedula" class="form-label">Cedula</label>
+                    <input type="text" class="form-control" id="Cedula" placeholder="">
+                </div>
+                
+                <div class="col-6">
+                    <label for="Telefono" class="form-label">Telefono</label>
+                    <input type="tel" class="form-control" id="Direccion" placeholder="4455678">
+                </div>
 
-            <h1> Datos dueño</h1>
+                <div class="col-6">
+                    <label for="Direccion" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="Direccion" placeholder="Cra  30 #25-14">
+                </div>
 
-            <h3> Nombre dueño </h3>
-            <label for="nom">Dueño </label>
-            <input type="text" name="Dueño" id="Dueño" size="" maxlength="20">
+            
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email@mailserver.com">
+                </div>
+                
+            <button class="btn btn-primary" type="submit">Enviar</button>
 
-            <h3> Cedula dueño </h3>
-            <label for="nom">Cedula </label>
-            <input type="text" name="Cedula" id="Cedula" size="" maxlength="20">
-
-            <h3> Telefono dueño </h3>
-            <label for="nom">Telefono </label>
-            <input type="text" name="Telefono" id="Telefono" size="" maxlength="20">
-
-            <h3> Direccion dueño </h3>
-            <label for="nom">Direccion </label>
-            <input type="text" name="Direccion" id="Direccion" size="" maxlength="20">
-
-            <h3>Digite Email dueño</h3>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="">
-
-            <h3> Digite Contraseña dueño</h3>
-            <label for="con"> Contraseña:</label>
-            <input type="password" name="" id="">
-
-            <br><br>
-            <input type="submit" value="¡Registrar! ">
-
-        </form>
+            </form>
+        </div>
+ 
 
         <footer>
             <p> Derechos de autor: VETERWEB</p>

@@ -1,63 +1,146 @@
-body{
+* {
     margin: 0;
     padding: 0;
-    background: url(../img/veter.jpg) no-repeat center top;
-    background-size: cover;
-    font-family: sans-serif;
-    height: 100vh;
+    /*background: url(../img/veter.jpg) no-repeat center top;*/
+    
 }
+.login{
+    background: #4DA0B0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-.login-box {
-    width:  320px;
-    height: 320px;
-    background: gray;
+    }
+.login-box{
+    position: absolute;
+    width: 350px;
+    height: 450px;
     top: 50%;
     left: 50%;
-    position: absolute;
     transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-    opacity: 0.9;
-    border-radius: 10%;
-    border: 3px solid;
-    border-color: darkturquoise;
-
+    background-color: rgba(135, 164, 170, 0.4);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 8px 15px #3b575c,
+    -8px -8px 22px #445b5f;
+   
 }
 
-.login-box h3{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    display: block;
-    color: rgb(131, 18, 18);
-    
-    
-}
-
-.login-box h1{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.login-box label{
-
-    margin: 0%;
-    padding: 0%;
-    display: block;
-    font-style: oblique;
-    font-weight: bold;
-}
-
-.login-box button{
-    display: block;
+.login-box img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 0px 0px 0px 2px #386872,
+    0px 0px 0px 5px #262829,
+    8px 8px 15px #386872,
+    -8px -8px 15px #386872;
+    background: aliceblue;
     margin: 20px;
-    background-color: aqua;
+    
 }
 
-.login-box input{
-    margin: 2%;
-    border-color: darkcyan;
+.login-box p{
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(102, 91, 39);
+    letter-spacing: 10px;
+}
+.login-box h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(102, 91, 39);
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.login-box .campos .datos {
+    border-radius: 10px;
+    box-shadow: inset 8px 8px 8px #262829,
+    inset -8px -8px 8px #3b575c;
+    margin-bottom: 15px;
+}
+
+.login-box .campos .datos i{
+    margin: 20px 5px 20px 20px;
+}
+
+.login-box .campos .datos input{
+    outline: none;
+    border: none;
+    background: none; 
+    font-size: 18px;
+    padding: 20px 20px 20px 5px;
+    color: rgb(250, 242, 242);
+}
+
+
+.login-box .btn-login{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 35px;
+    transition: .35s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.login-box .btn-login:hover{
+    background: #176a91;
+    color: aliceblue;
+    width: 60%;
+
+}
+
+.login-box .btn-login:active{
+    background: #037c42;
+    color: rgb(253, 253, 253);
+}
+.login-box .btn-registro{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 35px;
+    transition: .35s;
+    margin-top: 10px;
+}
+.login-box .btn-registro:hover{
+    background: #176a91;
+    color: aliceblue;
+    width: 60%;
+    height: 30px;
+}
+
+.login-box .btn-registro:active{
+    background: #037c42;
+    color: rgb(253, 253, 253);
+}
+
+form {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    top: 50%;
+    left: 25%;
+   
+
+    
+}
+
+form .Tipo {
+    opacity: 0.5;
+}
+
+form .btn{
+   
 }
