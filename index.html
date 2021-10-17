@@ -6,9 +6,16 @@
         <meta name="keywords" content="Veterinaria, perros, mascotas">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="css/master.css">
+        <link rel="icon" type="image/png" href="img/pngwing.com.png"/>
 
     </head>
     <body>
+        <style>           
+           footer {                
+                margin-top: 360px;
+            }
+       
+        </style>
         <div class="container">
             <form class="row g-3" action=""" method="POST">
                 <h1 class="Tipo"> Datos mascota</h1>
@@ -20,7 +27,7 @@
                 <div class="col-6">
                     <label for="Raza" class="form-label">Tipo mascota</label>
                     <select class="form-select" aria-label="Default select example">
-                        <option selected>Selecciona el tipo de mascota</option>
+                        <option value="" disabled selected>Selecciona el tipo de mascota</option>
                         <option value="ave">Aves</option>
                         <option value="Canino">Caninos</option>
                         <option value="Felino">Felinos</option>
@@ -30,10 +37,18 @@
                 </div>
                         
                 <div class="col-6">
-                    <label for="Edad" class="form-label">Edad</label>
-                    <input type="number" class="form-control" id="Edad" placeholder="min 1 - max 100" min="0" max="100" >
+                    <label for="Edad" class="form-label">Edad (años)</label>
+                    <input type="number" class="form-control" id="Edad" placeholder="min 0 - max 100" min="0" max="100" >
                 </div>
                 
+                <div class="col-6">
+                    <label for="Género" class="form-label">Género mascota</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="" disabled selected>Selecciona el género de la mascota</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="masculino">Masculino</option>                        
+                      </select>
+                </div>
 
                 <h1 class="Tipo"> Datos dueño</h1>
 
@@ -44,17 +59,17 @@
                 </div>
                 
                 <div class="col-6">
-                    <label for="Cedula" class="form-label">Cedula</label>
+                    <label for="Cedula" class="form-label">Cédula</label>
                     <input type="text" class="form-control" id="Cedula" placeholder="">
                 </div>
                 
                 <div class="col-6">
-                    <label for="Telefono" class="form-label">Telefono</label>
-                    <input type="tel" class="form-control" id="Direccion" placeholder="4455678">
+                    <label for="Telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="Telefono" placeholder="4455678">
                 </div>
 
                 <div class="col-6">
-                    <label for="Direccion" class="form-label">Address</label>
+                    <label for="Direccion" class="form-label">Dirección</label>
                     <input type="text" class="form-control" id="Direccion" placeholder="Cra  30 #25-14">
                 </div>
 
