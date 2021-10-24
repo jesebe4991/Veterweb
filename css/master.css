@@ -144,3 +144,7 @@ form .Tipo {
 form .btn{
    
 }
+
+.Tipo {
+    opacity: 0.5;
+}
