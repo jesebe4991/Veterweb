@@ -7,6 +7,8 @@
      <title>Calculadora VETERWEB</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
      <link rel="stylesheet" href="css/master.css">
+     <link rel="icon" href="img/pngwing.com.png" sizes="32x32" type="image/png">
+ 
      
  </head>
  <body>
@@ -37,44 +39,80 @@
         </div>
       </nav>
     
-     <H1 class="Tipo">Calculadora de descuento de procedimiento por estrato</H1>
-     
-     <div class="row g-3" >
-        <div class="col-md-4">
-          <label class="form-label">Cedula del Usuario</label>
-          <input type="number" class="form-control" name="IdUser" id="IdUser" placeholder="1123456734" >
+     <H1 class="Tipo">Calculadora de descuento de procedimiento basico por estrato</H1>
 
-        </div>
-        <div class="col-md-6">
-          <label class="form-label">Nombre de mascota</label>
-          <input type="text" class="form-control" name="NomMasc" id="NomMasc" >
-        </div>
-        <div class="col-md-6">
-          <label  class="form-label">Tipo de procedimiento</label>
-          <select class="form-select" name="TiPro" id="TiPro" >
-          <option selected disabled >Seleccione...</option>
-            <option value="20000">Reposo</option>
-            <option value="150000">Cirugia Ambulatoria</option>
-            <option value="60000">Medicamentos</option>
-            <option value="350000">Cirugia Intrahospitalaria</option>
+     <table class="table" >
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Procedimiento</th>
+          <th scope="col">Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Reposo</td>
+          <td>20000</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Cirugia Ambulatoria</td>
+          <td>150000</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Medicamentos</td>
+          <td>60000</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Cirugia Intrahospitalaria</td>
+          <td>350000</td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <form action="">
+      <div class="row g-3" >
+          <div class="col-md-4">
+            <label class="form-label">Cedula del Usuario</label>
+            <input type="number" class="form-control" name="IdUser" id="IdUser" placeholder="1123456734" >
+
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Nombre de mascota</label>
+            <input type="text" class="form-control" name="NomMasc" id="NomMasc" >
+          </div>
+          <div class="col-md-6">
+            <label  class="form-label">Tipo de procedimiento</label>
+            <select class="form-select" name="TiPro" id="TiPro" >
+            <option selected disabled >Seleccione...</option>
+              <option value="20000">Reposo</option>
+              <option value="150000">Cirugia Ambulatoria</option>
+              <option value="60000">Medicamentos</option>
+              <option value="350000">Cirugia Intrahospitalaria</option>
+              </select>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label">Estrato</label>
+            <select class="form-select" name="TiEstr" id="TiEstr">
+              <option selected disabled value="">Seleccione...</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
             </select>
+          </div>
+          </div>
+          <br>
+          <div class="col-12" >
+            <button onclick="descuento()" type="button" class="btn btn-primary">obtener</button>
+          </div>
         </div>
-        <div class="col-md-3">
-          <label class="form-label">Estrato</label>
-          <select class="form-select" name="TiEstr" id="TiEstr">
-            <option selected disabled value="">Seleccione...</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        </div>
-        <div class="col-12">
-          <input onclick="descuento()" type="button" value="obtener">
-        </div>
-    </div>
+      </form>
+    </div> 
     <script src="js/calculadora.js"></script>
  </body>
  </html>
